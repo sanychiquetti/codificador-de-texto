@@ -1,0 +1,126 @@
+body {
+    background-image: url(/images/fundo_tela.jpg);
+    border: 1px solid black;
+    width: 1330px;
+    height: 600px;
+}
+
+.logo {
+    position: absolute;
+    width: 16px;
+    height: 18px;
+    left: 30px;
+    top: 25px;
+}
+
+.texto_entrada {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+.texto1 {
+    width: 450px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+
+.alerta {
+    width: 250px;
+    opacity: 80%;
+    line-height: 8px;
+    margin-top: 200px;
+
+}
+
+.alerta::before {
+    content: url(/images/interrogacao.png);
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    margin-top: 450px;
+}
+
+.botoes {
+    display: flex;
+}
+
+.botoes li input {
+    text-align: center;
+    padding: 20px;
+    width: 180px;
+    border-radius: 24px;
+}
+
+.botao_criptografar .criptografar {
+    background: #0A3871;
+    margin-left: 150px;
+
+   font-family: 'Times';
+   font-size:20px;
+   font-style: italic;
+   color: white;
+}
+
+.botao_descriptografar .descriptografar {
+    background: #D8DFE8;
+    margin-left: 10px;
+    font-family: 'Times';
+    font-size:20px;
+    font-style: italic;
+}
+
+.retangulo {
+    position: absolute;
+    background-color: white;
+    border: 2px solid #989a91;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 450px;
+    height: 544px;
+    left: 850px;
+    top: 40px;
+}
+
+.texto_saida {
+    display: flex;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+.desenho {
+    position: absolute;
+    left: center;
+    top: 153px;
+    left: 120px;
+}
+
+.valida_mensagem  p {
+    display: flex;
+    width: 200px;
+    margin-left: 125px;
+    margin-top: 280px;
+
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-style: 300;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 20px;
+   text-align: center;
+   
+}
+
+.valida_mensagem .botao_copiar {
+    display: flex;
+    margin-left: 200px;
+    text-align:center;
+    width: 60px;
+    height: 30px;
+    background: #0A3871;
+    color: white;
+}
