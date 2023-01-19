@@ -1,43 +1,148 @@
+* {
+    font-family: 'Fira Code', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
 body {
     background-image: url(/images/fundo_tela.jpg);
+    background-repeat: no-repeat;
     border: 1px solid black;
-    width: 1330px;
-    height: 600px;
+    width: 1508px;
+    height: 780px;
 }
 
 .logo {
-    position: absolute;
-    width: 16px;
-    height: 18px;
-    left: 30px;
-    top: 25px;
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 2%;
 }
 
-.texto_entrada {
+main {
+    display: flex;
+    /* margin-bottom: 50px; */
+    margin-left: 120px;
+}
+
+.text-area {
+    background-color: #bfe7d2f1;
+    border: 2px solid #205f3e;
+    border-radius: 10px;
+    color: #4CB27C;
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+
+::placeholder { color: #4CB27C;
+} .text-area:focus {
+    outline: none;
+}
+
+.mensagem {
+    background: white;
+    text-align: center;background-image: url(/images/desenho_2x.png);    
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #4CB27C;
+    border-radius: 34px;
+    color: #4CB27C;
+    margin-left: 138px;
+    margin-top: 30px;
+    padding-left: 20px;
+    position: fixed;
+} 
+
+.mensagem:focus {
+    outline: none;
+}
+
+.botoes {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btnCriptografar {
+    background: #4CB27C;
+    border: 1px solid #4CB27C;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 280px;
+}
+
+.btnDescriptografar {
+    background: #4CB27C;
+    border: 1px solid #4CB27C;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-encriptar {
+    background-color: #4CB27C;
+    border: 1px solid #4CB27C;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btnCopiar {
+    position: relative;
+    border: 1px solid #4CB27C;
+    border-radius: 24px;
+    color: #4CB27C;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 175px;
+    margin-top: 450px;
+    width: 336px;
+}
+
+.informacao {
+    color: #4CB27C;
+    font-size: 18px;
+}
+
+.alerta p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: auto;
+    opacity: 70%;
+    line-height: 8px;
+    margin-top: 190px;
+    margin-left: 55px;
+}
+
+.alerta p::before {
+    content: url(/images/exclamacao.png);
+}
+
+/*
+.textoInformado {
     position: absolute;
     left: 200px;
     top: 200px;
 }
 
-.texto1 {
+.texto-entrada {
     width: 450px;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
 }
 
 
-.alerta {
-    width: 250px;
-    opacity: 80%;
-    line-height: 8px;
-    margin-top: 200px;
 
-}
 
 .alerta::before {
-    content: url(/images/interrogacao.png);
+    content: url(/images/exclamacao.png);
 }
 
 li {
@@ -57,22 +162,14 @@ li {
     border-radius: 24px;
 }
 
-.botao_criptografar .criptografar {
-    background: #0A3871;
+.btnCriptografar .criptografar {
+    background: #4CB27C;
     margin-left: 150px;
-
-   font-family: 'Times';
-   font-size:20px;
-   font-style: italic;
-   color: white;
 }
 
-.botao_descriptografar .descriptografar {
+.btnDescriptografar .descriptografar {
     background: #D8DFE8;
     margin-left: 10px;
-    font-family: 'Times';
-    font-size:20px;
-    font-style: italic;
 }
 
 .retangulo {
@@ -95,32 +192,16 @@ li {
 
 .desenho {
     position: absolute;
-    left: center;
     top: 153px;
-    left: 120px;
+    left: 130px;
 }
 
-.valida_mensagem  p {
-    display: flex;
-    width: 200px;
-    margin-left: 125px;
-    margin-top: 280px;
-
-   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   font-style: 300;
-   font-weight: bold;
-   font-size: 20px;
-   line-height: 20px;
-   text-align: center;
-   
-}
-
-.valida_mensagem .botao_copiar {
-    display: flex;
+.valida_mensagem .btnCopiar {
+    position: absolute;
     margin-left: 200px;
-    text-align:center;
+    text-align: center;
     width: 60px;
     height: 30px;
-    background: #0A3871;
+    background: #4CB27C;
     color: white;
-}
+} */
