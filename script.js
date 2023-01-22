@@ -1,7 +1,6 @@
 const textArea = document.querySelector(".text-area");
 const mensagem = document.querySelector(".mensagem");
-var copiaTexto = document.getElementById("btnCopiar");
-var colarTexto = document.getElementById("colar");
+
 
 // As "chaves" de criptografia que utilizaremos são:
 // A letra "e" é convertida para "enter"
@@ -46,3 +45,9 @@ function desencriptar(stringDesencriptar) {
     return stringDesencriptar;
 }
 
+function copiar() {
+    const textoCriptografado = document.getElementById("textoCriptografado");
+    textoCriptografado.select();
+    document.execCommand('copy');
+    alert("Texto Copiado: " +textoCriptografado.value);
+}

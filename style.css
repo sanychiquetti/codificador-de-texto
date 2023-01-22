@@ -54,10 +54,10 @@ main {
     background-position: center;
     border: 2px solid #4CB27C;
     border-radius: 34px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 1, 0.692);
     color: #4CB27C;
     margin-left: 125px;
-    margin-top: 7px;
-    padding-left: 20px;
+    padding-left: 10px;
     position: fixed;
 } 
 
