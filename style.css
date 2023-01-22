@@ -8,8 +8,8 @@
 
 body {
     border: 1px solid black;
-    width: 1526px;
-    height: 798px;
+    width: 1330px;
+    height: 600px;
 }
 
 .fundo-tela {
@@ -28,7 +28,7 @@ body {
 
 main {
     display: flex;
-    /* margin-bottom: 50px; */
+    margin-bottom: 50px;
     margin-left: 120px;
 }
 
@@ -48,14 +48,15 @@ main {
 
 .mensagem {
     background: white;
-    text-align: center;background-image: url(/images/desenho_2x.png);    
+    text-align: center;
+    background-image: url(./images/desenho_2x.png);    
     background-repeat: no-repeat;
     background-position: center;
     border: 2px solid #4CB27C;
     border-radius: 34px;
     color: #4CB27C;
-    margin-left: 138px;
-    margin-top: 30px;
+    margin-left: 125px;
+    margin-top: 7px;
     padding-left: 20px;
     position: fixed;
 } 
@@ -119,15 +120,16 @@ main {
     border-radius: 24px;
     color: #4CB27C;
     cursor: pointer;
-    height: 67px;
-    margin-left: 175px;
-    margin-top: 450px;
-    width: 336px;
+    height: 47px;
+    margin-left: 190px;
+    margin-top: 390px;
+    width: 236px;
     transition: 0.2s all ease-in-out;
 }
 
 .btnCopiar:hover {
     background-color: #205f3e;
+    color: white;
 }
 
 .informacao {
@@ -147,84 +149,5 @@ main {
 }
 
 .alerta p::before {
-    content: url(/images/exclamacao.png);
+    content: url(./images/exclamacao.png);
 }
-
-/*
-.textArea {
-    position: absolute;
-    left: 200px;
-    top: 200px;
-}
-
-.texto-entrada {
-    width: 450px;
-}
-
-
-
-
-.alerta::before {
-    content: url(/images/exclamacao.png);
-}
-
-li {
-    list-style-type: none;
-    display: flex;
-    margin-top: 450px;
-}
-
-.botoes {
-    display: flex;
-}
-
-.botoes li input {
-    text-align: center;
-    padding: 20px;
-    width: 180px;
-    border-radius: 24px;
-}
-
-.btnEncriptar .criptografar {
-    background: #4CB27C;
-    margin-left: 150px;
-}
-
-.btnDescriptografar .descriptografar {
-    background: #D8DFE8;
-    margin-left: 10px;
-}
-
-.retangulo {
-    position: absolute;
-    background-color: white;
-    border: 2px solid #989a91;
-    border-radius: 30px;
-    overflow: hidden;
-    width: 450px;
-    height: 544px;
-    left: 850px;
-    top: 40px;
-}
-
-.texto_saida {
-    display: flex;
-    margin-left: 130px;
-    margin-top: 30px;
-}
-
-.desenho {
-    position: absolute;
-    top: 153px;
-    left: 130px;
-}
-
-.valida_mensagem .btnCopiar {
-    position: absolute;
-    margin-left: 200px;
-    text-align: center;
-    width: 60px;
-    height: 30px;
-    background: #4CB27C;
-    color: white;
-} */
